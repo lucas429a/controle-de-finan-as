@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+      <dialog>
+      </dialog>
+    <header class ="header__container">
+      <h1 class ="header__tittle"><span class="header__span" >Control</span>Finance</h1>
+      <button class="header__button">Registrar novo valor</button>
+    </header>
+    <main id="app">
+      <nav class="nav__container" >
+        <h2 class="nav__tittle">Resumo financeiro</h2>
+        <div class="nav__button-container" >
+          <input type="radio" id="todos" name="categoryID" value="2"  class="nav__button">
+          <label for="todos">Todos</label>
+          <input type="radio" id="entradas" name="categoryID" value="0"  class="nav__button">
+          <label for="entradas">entradas</label>
+          <input type="radio" id="saidas" name="categoryID" value="1"  class="nav__button">
+          <label for="saidas">saidas</label>
+        </div>
+      </nav>
+      <section class="li__header" >
+        <p class="li__tittle">Soma dos valores</p>
+        <span class="li__coin"></span>
+      </section>
+      <section >
+      <ul class="li__container"></ul>
+      </section>
+    </main>
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>
